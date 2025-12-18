@@ -1,0 +1,332 @@
+<!--  <div id="skills">
+    <div class="containerr">
+        <h1>Skills</h1>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="c++.png" alt="C++">
+                <p>C++/C</p>
+            </div> 
+            <div class="skill-card">
+                <img src="git.png" alt="Git Source Control">
+                <p>Git Source Control</p>
+            </div>
+            <div class="skill-card">
+                <img src="fire.png" alt="Firebase">
+                <p>Firebase</p>
+            </div>
+         <div class="skill-card">
+                <img src="mo.png" alt="MongoDB">
+                <p>MongoDB</p>
+            </div>
+            <div class="skill-card">
+                <img src="node.png" alt="Node-JS">
+                <p>Node-JS</p>
+            </div>
+            <div class="skill-card">
+                <img src="js.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="skill-card">
+                <img src="express.png" alt="Express JS">
+                <p>Express JS</p>
+            </div>
+            <div class="skill-card">
+                <img src="html.png" alt="HTML-CSS">
+                <p>HTML-CSS</p>
+            </div>
+            <div class="skill-card">
+                <img src="sql.png" alt="SQL">
+                <p>SQL</p>
+            </div>
+            </div>
+            <div class="skill-card">
+                <img src="jetoack.png" alt="Jetpack">
+                <p>Jetpack</p> 
+            </div>
+        </div> -->
+
+
+
+
+            <!-- <div class="header-text">
+      <p>Application Developer</p>
+      <h1>Hi, I'm <span>Nitin Gautam</span></h1>
+      <p>
+        I am a dedicated developer, eager learner, and committed student who loves diving into new technologies and giving my best in every task.
+      </p>
+      <p>
+        With a focus on continuous improvement and excellence, I excel in overcoming challenges and contributing to forward-thinking projects.
+      </p>
+
+    </div>
+  </div> -->
+
+
+        #header {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-text {
+  position: relative; /* Ensure relative positioning for absolute positioning of about-col-5 */
+}
+
+.about-col-5 {
+  position: absolute;
+  top: 50%;
+  right: 50px; /* Adjust right distance as needed */
+  transform: translateY(-50%);
+}
+
+.about-col-5 img {
+  width: 300px;
+  flex-basis: 35%;
+  border-radius: 15px;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+
+.header-text {
+    margin-top: 20%;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.header-text h1 span {
+    color: #e7e416;
+}
+
+
+
+
+
+
+
+ <!-- ⚙️ SERVICES -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Designing responsive and user-friendly websites using HTML and CSS.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-java"></i>
+          <h2>Skills</h2>
+          <p>C, C++, Java, Kotlin, XML, Jetpack Compose, Flutter, Dart, JavaScript, Firebase.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>App Development</h2>
+          <p>I build Android apps using Java, Kotlin, and Flutter with modern UI and functionality.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+
+
+
+     <!-- 💼 PORTFOLIO -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="work-1.png" alt="Social Media App" />
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>Chat app connecting people globally. Check my GitHub for code.</p>
+            <a href="https://github.com/nitin4568?tab=repositories" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="work-2.png" alt="Gallery Editor" />
+          <div class="layer">
+            <h3>Gallery Editor</h3>
+            <p>Edit and manage images. Source code on GitHub.</p>
+            <a href="https://github.com/nitin4568?tab=repositories" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work">
+          <img src="work-3.png" alt="Calculator" />
+          <div class="layer">
+            <h3>Calculator</h3>
+            <p>Performs multiple calculations. View project on GitHub.</p>
+            <a href="https://github.com/nitin4568?tab=repositories" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  * Portfolio Section Styles */
+#portfolio {
+    padding: 50px 0;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(210, 210, 13, 0.6), #108ee7);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #dde02e;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+/* Button Styles */
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #d5d771;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: rgb(173, 212, 56);
+}
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #0b0b0b;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.copyright i {
+    color: #c58a00;
+}
+
+nav .fas {
+    display: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+ <div class="tab-titles">
+            <p class="tab-links make-link" onclick="opentab('Skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+
+          <div class="tab-contentes active-tab" id="Skills">
+            <ul>
+              <li><span>UI/UX Design</span><br>Designing intuitive and visually appealing interfaces.</li>
+              <li><span>Web Development</span><br>Frontend development using HTML, CSS, and JavaScript.</li>
+              <li><span>Programming</span><br>Proficient in C, C++, Java, Kotlin, and Firebase.</li>
+              <li><span>App Development</span><br>Building Android and Flutter applications.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contentes" id="Experience">
+            <ul>
+              <li><span>Internships</span><br>Worked on real-world Flutter and Web projects.</li>
+              <li><span>Freelancing</span><br>Delivered multiple apps and web solutions to clients.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contentes" id="Education">
+            <ul>
+              <li><span>Class 10</span><br>Saraswati School, Satna (80%)</li>
+              <li><span>Class 12</span><br>Saraswati School, Satna (80%)</li>
+              <li><span>B.Tech (CSE)</span><br>Gyan Ganga College, Jabalpur</li>
+            </ul>
+          </div>

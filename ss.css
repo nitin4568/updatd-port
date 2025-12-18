@@ -1,0 +1,103 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background: var(--bg);
+  transition: background 1s ease;
+}
+
+/* Theme colors */
+:root {
+  --day-bg: linear-gradient(to bottom, #a8e6ff, #fdf6e3);
+  --night-bg: radial-gradient(circle at 20% 30%, #000020, #000010, #000000);
+  --bg: var(--night-bg);
+}
+
+body.day { --bg: var(--day-bg); }
+body.night { --bg: var(--night-bg); }
+
+.firefly-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: var(--bg);
+}
+
+#fireflyCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Theme toggle */
+#themeToggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 20;
+  font-size: 1.6rem;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  pointer-events: auto;
+}
+#themeToggle:hover {
+  background: rgba(255,255,255,0.3);
+  transform: scale(1.1);
+}
+
+/* Sun & Moon */
+.celestial {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  transition: all 1s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+.sun {
+  background: radial-gradient(circle, #fff176, #fbc02d);
+  box-shadow: 0 0 60px 20px rgba(255,255,120,0.6);
+  top: 20%;
+  left: 10%;
+}
+.moon {
+  background: radial-gradient(circle, #cfd8dc, #90a4ae);
+  box-shadow: 0 0 50px 15px rgba(200,220,255,0.5);
+  top: 10%;
+  left: 80%;
+}
+
+/* Galaxy swirl */
+.galaxy {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.05), transparent 70%);
+  box-shadow: 0 0 80px 50px rgba(255,255,255,0.05);
+  transform: translate(-50%, -50%) rotate(0deg);
+  animation: spinGalaxy 60s linear infinite;
+}
+@keyframes spinGalaxy {
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Visibility per theme */
+body.day .sun { opacity: 1; }
+body.night .moon { opacity: 1; }
+body.day .galaxy { opacity: 0; }

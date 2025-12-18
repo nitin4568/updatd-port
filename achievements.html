@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  
+  <title>Achievements - Nitin Gautam</title>
+  <link rel="stylesheet" href="all.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    #header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+    }
+    #header nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    #header nav ul li {
+      margin: 0 15px;
+    }
+    #header nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    #achievements {
+      text-align: center;
+      padding: 20px;
+    }
+    .certificates {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .certificate {
+      margin: 15px;
+      cursor: pointer;
+      position: relative;
+    }
+    .certificate img {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .certificate-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 5px;
+      border-radius: 0 0 10px 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal img {
+      max-width: 90vw;
+      max-height: 90vh;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="achievements.html">AAchievements</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div id="aachievements" class="container">
+    <h1>My AAchievements</h1>
+    <div class="certificates">
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761660774/Alibaba_zzw8md.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761660774/Alibaba_zzw8md.jpg"
+          alt="Alibaba Certificate"
+        />
+        <div class="certificate-title">Alibaba Certificate</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761660939/cyberseqrty_xgrnoh.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761660939/cyberseqrty_xgrnoh.jpg"
+          alt="Cybersecurity Essentials"
+        />
+        <div class="certificate-title">Cybersecurity Essentials</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661056/cyberseqrtyy_lltzp6.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661056/cyberseqrtyy_lltzp6.jpg"
+          alt="Cybersecurity"
+        />
+        <div class="certificate-title">Cybersecurity</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661212/jnuelerning_xgzzik.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661212/jnuelerning_xgzzik.jpg"
+          alt="Juniper Elearning"
+        />
+        <div class="certificate-title">Juniper Elearning</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661138/java_toabdp.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661138/java_toabdp.jpg"
+          alt="Java Certificate"
+        />
+        <div class="certificate-title">Java Certificate</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661356/packet_tracer_luvs13.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661356/packet_tracer_luvs13.jpg"
+          alt="Packet Tracer"
+        />
+        <div class="certificate-title">Packet Tracer</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661290/paloalto_xglavf.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661290/paloalto_xglavf.jpg"
+          alt="Palo Alto Networks"
+        />
+        <div class="certificate-title">Palo Alto Networks</div>
+      </div>
+
+     
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666814/ccna_routin_and_wireless_auz1a7.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666814/ccna_routin_and_wireless_auz1a7.jpg"
+          alt="CCNA Routing and Wireless"
+        />
+        <div class="certificate-title">CCNA Routing and Wireless</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666813/CCNA_introduction_to_network_jl8vwp.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666813/CCNA_introduction_to_network_jl8vwp.jpg"
+          alt="CCNA Introduction to Networks"
+        />
+        <div class="certificate-title">CCNA Introduction to Networks</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666813/CCNA_Enterprise_Netwoking_iyluee.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666813/CCNA_Enterprise_Netwoking_iyluee.jpg"
+          alt="CCNA Enterprise Networking"
+        />
+        <div class="certificate-title">CCNA Enterprise Networking</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666827/ScalerOpertingSystem_u9scgj.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666827/ScalerOpertingSystem_u9scgj.jpg"
+          alt="Operating System"
+        />
+        <div class="certificate-title">Operating System</div>
+      </div>
+      
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666826/pythonEssentials_1_wmcf1g.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666826/pythonEssentials_1_wmcf1g.jpg"
+          alt="Python Essentials 1"
+        />
+        <div class="certificate-title">Python Essentials 1</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666825/pythonEssentials_2_jeslyv.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666825/pythonEssentials_2_jeslyv.jpg"
+          alt="Python Essentials 2"
+        />
+        <div class="certificate-title">Python Essentials 2</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666823/kotlin_certificte_zhlqs6.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666823/kotlin_certificte_zhlqs6.jpg"
+          alt="Kotlin Certificate"
+        />
+        <div class="certificate-title">Kotlin Certificate</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666822/junipercloud_aa6e4w.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666822/junipercloud_aa6e4w.jpg"
+          alt="Juniper Cloud"
+        />
+        <div class="certificate-title">Juniper Cloud</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666821/introduction_to_cybersecurity_dxnr7n.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666821/introduction_to_cybersecurity_dxnr7n.jpg"
+          alt="Introduction to Cybersecurity"
+        />
+        <div class="certificate-title">Introduction to Cybersecurity</div>
+      </div>
+   
+      
+      
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666817/goroots_flutter_msnary.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666817/goroots_flutter_msnary.jpg"
+          alt="Go Roots Flutter"
+        />
+        <div class="certificate-title">Go Roots Flutter</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666816/ciscoNetwork_Defense_jesgql.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666816/ciscoNetwork_Defense_jesgql.jpg"
+          alt="Cisco Network Defense"
+        />
+        <div class="certificate-title">Cisco Network Defense</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666819/goroots_letter_1_q22rbw.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666819/goroots_letter_1_q22rbw.jpg"
+          alt="Go Roots OfferLetter 1"
+        />
+        <div class="certificate-title">Go Roots OfferLetter 1</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666819/goroots_letter_2_qogsed.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666819/goroots_letter_2_qogsed.jpg"
+          alt="Go Roots OfferLetter 2"
+        />
+        <div class="certificate-title">Go Roots OfferLetter 2</div>
+      </div>
+         <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666820/goroots_k1amjt.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666820/goroots_k1amjt.jpg"
+          alt="Go Roots"
+        />
+        <div class="certificate-title">Go Roots</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666825/kotlinOfferletter_n2c5ag.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666825/kotlinOfferletter_n2c5ag.jpg"
+          alt="Kotlin Offer Letter"
+        />
+        <div class="certificate-title">Kotlin Offer Letter</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666815/celonis_hrnss1.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666815/celonis_hrnss1.jpg"
+          alt="Celonis"
+        />
+        <div class="certificate-title">Celonis</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666812/aws_cloud_ucla8x.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666812/aws_cloud_ucla8x.jpg"
+          alt="AWS Cloud"
+        />
+        <div class="certificate-title">AWS Cloud</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666812/aws_byhlao.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666812/aws_byhlao.jpg"
+          alt="AI ML"
+        />
+        <div class="certificate-title">AI ML</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666812/alteryx_a4pinz.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666812/alteryx_a4pinz.jpg"
+          alt="Alteryx"
+        />
+        <div class="certificate-title">Alteryx</div>
+      </div>
+       <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661427/javafukk_em9urt.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661427/javafukk_em9urt.jpg"
+          alt="Java Full Stack Developer"
+        />
+        <div class="certificate-title">Java Full Stack Developer</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661509/juniper_wexx0z.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661509/juniper_wexx0z.jpg"
+          alt="Juniper Networks"
+        />
+        <div class="certificate-title">Juniper Networks</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661462/networkcloud_j4v7wt.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661462/networkcloud_j4v7wt.jpg"
+          alt="Network Cloud"
+        />
+        <div class="certificate-title">Network Cloud</div>
+      </div>
+
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661509/juniper_wexx0z.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661509/juniper_wexx0z.jpg"
+          alt="Juniper"
+        />
+        <div class="certificate-title">Juniper</div>
+      </div>
+      <div
+        class="certificate"
+        onclick="openModal('https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661462/networkcloud_j4v7wt.jpg')"
+      >
+        <img
+          src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761661462/networkcloud_j4v7wt.jpg"
+          alt="Network Cloud"
+        />
+        <div class="certificate-title">Network Cloud</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" alt="Certificate Image" />
+  </div>
+
+  <script>
+    function openModal(imageSrc) {
+      document.getElementById("modalImage").src = imageSrc;
+      document.getElementById("myModal").style.display = "flex";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == document.getElementById("myModal")) {
+        closeModal();
+      }
+    };
+  </script>
+</body>
+</html>

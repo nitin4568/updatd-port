@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Nitin Gautam</title>
+  <link rel="stylesheet" href="nitin.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="nlogo.png" />
+  <script src="https://kit.fontawesome.com/b0a8d4fc57.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- 🌌 BACKGROUND (Firefly + Galaxy) -->
+  <div class="firefly-container">
+    <canvas id="fireflyCanvas"></canvas>
+    <div class="celestial sun"></div>
+    <div class="celestial moon"></div>
+    <div class="galaxy"></div>
+  </div>
+
+  <!-- 🌓 THEME TOGGLE -->
+  <!-- <button id="themeToggle" title="Toggle Day/Night">🌙</button> -->
+   <div class="moon"></div>
+
+
+  <!-- 💼 HEADER -->
+  <header id="header">
+    <div class="container">
+      <nav>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+        <span class="name"></span>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#About">About</a></li>
+
+          <!-- <li><a href="#Projects">Projects</a></li> -->
+          <li><a href="#certificate">Certificates</a></li>
+           <li><a href="achievements.html">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <button class="hire-me-btn"><i class="fa-solid fa-phone"></i> Hire Me</button>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🧠 ABOUT -->
+<!-- 🧠 ABOUT -->
+<section id="About">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766070299/WhatsApp_Image_2025-12-18_at_8.33.38_PM_xek1ux.jpg" alt="Nitin Gautam" />
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <h3 class="tagline">Developer • Designer • Learner</h3>
+        <p>
+          Hi, I'm <strong>Nitin Gautam</strong> — a passionate and self-driven developer from Madhya Pradesh, 
+          currently pursuing B.Tech in Computer Science at Gyan Ganga College, Jabalpur.  
+          I’ve worked on many projects, participated in <strong>Smart India Hackathon (SIH)</strong>, 
+          completed <strong>internships</strong> and <strong>freelancing work</strong>, and led small project teams.  
+          Skilled in <strong>Flutter, Java, C++, Firebase</strong>, and <strong>modern UI design</strong>, 
+          I aim to create meaningful digital experiences with clean and efficient code.
+        </p>
+        <div class="about-stats">
+          <div><strong>3+</strong><br>Years of Learning</div>
+          <div><strong>10+</strong><br>Projects</div>
+          <div><strong>2+</strong><br>Internships</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</section>
+<section class="education" id="Education">
+  <h2 class="heading">Education</h2>
+
+  <div class="timeline-items">
+
+    <!-- 10th Class -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <!-- <div class="timeline-date">Class 10th</div> -->
+
+      <div class="timeline-content">
+        <div class="cat">
+          <div class="ear ear--left"></div>
+          <div class="ear ear--right"></div>
+          <div class="face">
+            <div class="eye eye--left">
+              <div class="eye-pupil"></div>
+            </div>
+            <div class="eye eye--right">
+              <div class="eye-pupil"></div>
+            </div>
+            <div class="muzzle"></div>
+          </div>
+        </div>
+
+        <h2>High School (10th)</h2>
+        <p>
+          <b>Saraswati Shishu Mandir</b><br>
+          Amarpatan, Satna (M.P.)<br><br>
+          <b>Percentage:</b> 79%
+        </p>
+      </div>
+    </div>
+
+    <!-- 12th Class -->
+    <div class="timeline-item">
+      <div class="timeline-dot pic-dot"></div>
+      <!-- <div class="timeline-date">Class 12th</div> -->
+
+      <div class="timeline-content">
+        <h2>Senior Secondary (12th)</h2>
+        <p>
+          <b>Saraswati Shishu Mandir</b><br>
+          Amarpatan, Satna (M.P.)<br><br>
+          <b>Percentage:</b> 77%
+        </p>
+      </div>
+
+      <div class="hover-img">
+        <img src="https://res.cloudinary.com/dpjbpidwj/image/upload/v1738129350/Portfolio1/g08eyhd2scodvpi2qpxr.jpg"
+          alt=" " class="img-fluid">
+      </div>
+    </div>
+
+    <!-- University -->
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <!-- <div class="timeline-date">B.Tech</div> -->
+
+      <div class="timeline-content">
+        <div class="cat">
+          <div class="ear ear--left"></div>
+          <div class="ear ear--right"></div>
+          <div class="face">
+            <div class="eye eye--left">
+              <div class="eye-pupil"></div>
+            </div>
+            <div class="eye eye--right">
+              <div class="eye-pupil"></div>
+            </div>
+            <div class="muzzle"></div>
+          </div>
+        </div>
+
+        <h2>University</h2>
+        <p>
+          <b>Gyan Ganga Institute of Technology & Sciences</b><br>
+          Jabalpur, Madhya Pradesh<br><br>
+          <b>Degree:</b> B.Tech in Computer Science & Engineering
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- 🧩 HIGHLIGHTED SKILLS -->
+  <section id="skills">
+    <div class="containerr">
+      <h1>Highlighted Skills</h1>
+      <div class="skills-grid">
+       <!-- Mobile / App -->
+  <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766070108/flutter_upxx9n.png" alt="Flutter" /><p>Flutter</p></div>
+  <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766070135/da_u0rcr8.png" alt="Dart" /><p>Dart</p></div>
+  <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766069965/Kotlin_wzu9a6.png" alt="Kotlin" /><p>Kotlin</p></div>
+  <!-- <div class="skill-card"><img src="xml.png" alt="XML" /><p>XML</p></div> -->
+
+        <!-- Programming -->
+  <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766070047/javaaa_um9zvw.png" alt="Java" /><p>Java</p></div>
+  <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766071616/Untitled_wy5nnq.jpg" alt="Python" /><p>Python</p></div>
+  <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766070146/c_jmikbt.png" alt="C++" /><p>C++</p></div>
+
+  <!-- Web -->
+  <!-- <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766070073/html_c6wyrp.png" alt="HTML" /><p>HTML</p></div>
+  <div class="skill-card"><img src="css.png" alt="CSS" /><p>CSS</p></div>
+  <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766069904/node_w4rnhk.png" alt="Node.js" /><p>Node.js</p></div>
+  <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766069816/express_pdvct4.png" alt="Express.js" /><p>Express.js</p></div> -->
+
+        <!-- Database & Backend -->
+  <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766069888/sql_ayobed.png" alt="SQL" /><p>SQL</p></div>
+  <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766070115/fire_oh0wwg.png" alt="Firebase" /><p>Firebase</p></div>
+
+          <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766070084/git_xj5llg.png" alt="GitHub" /><p>GitHub</p></div>
+  <div class="skill-card"><img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1766069951/material_jpkgzj.png" alt="Material UI" /><p>Material UI</p></div>
+
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- 🧩 HIGHLIGHTED SKILLS -->
+    <!-- <div class="containerr">
+      <h1>Normal Skills</h1>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="flutter.png" alt="Flutter" /><p>Flutter</p></div>
+        <div class="skill-card"><img src="da.png" alt="Dart" /><p>Dart</p></div>
+        <div class="skill-card"><img src="javaaa.png" alt="Java" /><p>Java</p></div>
+        <div class="skill-card"><img src="Kotlin.png" alt="Kotlin" /><p>Kotlin</p></div>
+        <div class="skill-card"><img src="Xml.png" alt="XML" /><p>XML</p></div>
+        <div class="skill-card"><img src="material.png" alt="Material-UI" /><p>Material-UI</p></div>
+        <div class="skill-card"><img src="flutter.png" alt="Flutter" /><p>Flutter</p></div>
+        <div class="skill-card"><img src="da.png" alt="Dart" /><p>Dart</p></div>
+        <div class="skill-card"><img src="javaaa.png" alt="Java" /><p>Java</p></div>
+        <div class="skill-card"><img src="Kotlin.png" alt="Kotlin" /><p>Kotlin</p></div>
+        <div class="skill-card"><img src="Xml.png" alt="XML" /><p>XML</p></div>
+        <div class="skill-card"><img src="material.png" alt="Material-UI" /><p>Material-UI</p></div>
+      </div>
+    </div> -->
+  <!-- ⚙️ SERVICES -->
+   <!-- ⚙️ TOOLS, PLATFORMS & GADGETS SECTION -->
+<section id="tools">
+  <div class="container">
+    <h1 class="title">Tools, Platforms & Gadgets</h1>
+
+    <!-- 🔧 Development Tools -->
+    <div class="tools-category">
+      <h2>Development Tools</h2>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+          <h3>VS Code</h3>
+        </div>
+        <div class="tool-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" />
+          <h3>Android Studio</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- 💻 Operating Systems -->
+    <div class="tools-category">
+      <h2>Operating Systems</h2>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+          <h3>Linux</h3>
+        </div>
+        <div class="tool-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows" />
+          <h3>Windows</h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- ⚙️ Gadgets & Embedded Platforms -->
+    <div class="tools-category">
+      <h2>Gadgets & Embedded Platforms</h2>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="Raspberry Pi 5" />
+          <h3>Raspberry Pi 5</h3>
+        </div>
+        <div class="tool-card">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Flipper_Zero_logo.png" alt="Flipper Zero" />
+          <h3>Flipper Zero</h3>
+        </div>
+        <div class="tool-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3039/3039394.png" alt="ESP Board" />
+          <h3>ESP Board</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  
+
+  <!-- 💻 PROJECTS -->
+  <!-- <section id="Projects">
+    <div class="project-list">
+      <h1 class="title">My Projects</h1>
+      <ul>
+        <li>
+          <div class="index"><span>01</span></div>
+          <div class="release-year"><span>2023</span></div>
+          <div class="project-name">
+             <h2><a href="https://ggrt.onrender.com/" target="_blank">GGRT Gyan Ganga Room Tracker</a></h2> -->
+          <!-- </div> -->
+           <!-- <div class="project-name"> -->
+            <!-- <h2><a href="https://ggrt.onrender.com/" target="_blank">GGRT Gyan Ganga Room Tracker</a></h2> -->
+          <!-- </div>
+           <div class="project-name"> -->
+            <!-- <h2><a href="https://ggrt.onrender.com/" target="_blank">GGRT Gyan Ganga Room Tracker</a></h2> -->
+          <!-- </div>
+           <div class="project-name"> -->
+            <!-- <h2><a href="https://ggrt.onrender.com/" target="_blank">GGRT Gyan Ganga Room Tracker</a></h2> -->
+          <!-- </div>
+          <div class="genere"><span>website, navigation, information</span></div> -->
+          <!-- <div class="hover-img">
+            <img src="https://res.cloudinary.com/dpjbpidwj/image/upload/v1738129351/Portfolio1/yxoyncrueug7uj8efggw.png" alt="GGRT" /> -->
+          <!-- </div>
+        </li>
+      </ul>
+    </div>
+  </section> -->
+ 
+
+<!-- Certificate Section -->
+<section class="Certificate" id="certificate">
+  <h2 class="heading">My <span>Certifications</span></h2>
+
+  <div class="stack-area">
+    <div class="left">
+      <div class="title" id="title">Achievements</div>
+      <div class="sub-title" id="sub-title">A showcase of my certified skills and learning milestones</div>
+    </div>
+
+    <div class="right">
+<!--offer Letter -->
+
+  <div class="card">
+        <img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666825/kotlinOfferletter_n2c5ag.jpg" alt="Kotlin Offer Letter" />
+        <div class="cert-title">Kotlin offer Letter</div>
+        <div class="cert-sub">Completed on June 2024</div>
+      </div>
+      <div class="card">
+        <img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666823/kotlin_certificte_zhlqs6.jpg" alt="Kotlin Certificate" />
+        <div class="cert-title">Kotlin</div>
+        <div class="cert-sub">Completed on February 2024</div>
+      </div>
+
+        <div class="card">
+        <img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666819/goroots_letter_1_q22rbw.jpg" alt="flutter Offer Letter" />
+        <div class="cert-title">Flutter Offer Letter</div>
+        <div class="cert-sub">Completed on may 2025</div>
+      </div>
+       <div class="card">
+        <img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666819/goroots_letter_2_qogsed.jpg" alt="flutter Offer Letter" />
+        <div class="cert-title">Flutter Offer Letter</div>
+        <div class="cert-sub">Completed on may 2025</div>
+      </div>
+        <div class="card">
+        <img  src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666817/goroots_flutter_msnary.jpg" alt="Flutter Certificate" />
+        <div class="cert-title">Flutter Certificate</div>
+        <div class="cert-sub">Completed on May 2025</div>
+      </div>
+      
+     <!-- <div class="card">
+        <img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666820/goroots_k1amjt.jpg" alt="Cisco Cloud Security" />
+        <div class="cert-title">Flutter </div>
+        <div class="cert-sub">Completed on may 2025</div>
+      </div> -->
+
+
+     <div class="card">
+        <img src="https://res.cloudinary.com/dj0ppzthg/image/upload/v1761666827/ScalerOpertingSystem_u9scgj.jpg" alt="Cisco Cloud Security" />
+        <div class="cert-title">Operating System</div>
+        <div class="cert-sub">Completed on February 2024</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- 📞 CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i> nkgautam1450@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91-8085476868</p>
+
+          <div class="social-icons">
+            <a href="https://facebook.com/profile.php?id=100049727286684"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://leetcode.com/u/nitin_14920914/"><i class="fa-brands fa-free-code-camp"></i></a>
+            <a href="https://x.com/nkgautam1450"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://t.me/Nk14920914unknown"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://linkedin.com/in/nitin-gautam-058308264"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/nitin4568"><i class="fa-brands fa-github"></i></a>
+          </div>
+
+          <a href="Nitin Gautam.pdf" download class="btn btn2">Download CV</a>
+        </div>
+
+        <div class="contact-right">
+  <form id="contact-form">
+    <input
+      type="text"
+      name="from_name"
+      placeholder="Your name"
+      required
+    />
+
+    <input
+      type="email"
+      name="reply_to"
+      placeholder="Your email"
+      required
+    />
+
+    <textarea
+      name="message"
+      rows="6"
+      placeholder="Your message"
+      required
+    ></textarea>
+
+    <button type="submit" class="btn btn2">Submit</button>
+  </form>
+
+  <span id="msg"></span>
+</div>
+
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
